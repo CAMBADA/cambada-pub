@@ -11,10 +11,10 @@ README
 * CAMBADA RTDB & COMM
 * CAMBADA SIMPLE STRIKER AGENT
 * 
-* All these modules are composed of free software: you can redistribute it and/or modify
-* it under the terms of the GNU General Public License as published by
-* the Free Software Foundation, either version 3 of the License, or
-* (at your option) any later version.
+* All these modules are composed of free software: you can redistribute
+* it and/or modify it under the terms of the GNU General Public License
+* as published by the Free Software Foundation, either version 3 of the
+* License, or (at your option) any later version.
 *
 * These software modules are distributed in the hope that they will be useful,
 * but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -25,7 +25,6 @@ README
 * along with these packages.  If not, see <http://www.gnu.org/licenses/>.
 ***************************************************************************
 
-
 ### Basic Information and Version Info
 
 This is the release 1.0 of all the tools referred to in the above header.
@@ -34,8 +33,7 @@ Future releases may be updated with new features, agents, tools or tutorials.
 
 Check regularly at: 
        http://robotica.ua.pt/CAMBADA/  or 
-       https://github.com/search?utf8=%E2%9C%93&q=CAMBADA
-
+       https://github.com/CAMBADA
 
 ### Contents
 
@@ -59,17 +57,19 @@ Check regularly at:
   src/tools/simulator            simulator tool
   src/util/                      utility functions for the basic agent
 
-
 ### Operating System and Compiler
 
-The source code has been tested after being compiled with gcc/g++ - Gnu Project C/C++ Compiler (gcc version 4.8.2) using the Qt4 libraries on Linux Ubuntu 14.04.
+The source code has been tested after being compiled with gcc/g++ - Gnu Project
+C/C++ Compiler (gcc version 4.8.2) using the Qt4 libraries on Linux Ubuntu 14.04.
         
 
 ### Instructions on how to use this release:
 
-* All the packages listed in the "toInstall_Ubuntu14.04" file have to be installed prior to compilation.
+* All the packages listed in the "toInstall_Ubuntu14.04" file have to be
+installed prior to compilation.
 
-* All libraries in the "deps/" directory have to be installed prior to compilation. You can use the "installDeps.sh" script found in "/deps" to perform this installation.
+* All libraries in the "deps/" directory have to be installed prior to compilation.
+You can use the "installDeps.sh" script found in "/deps" to perform this installation.
    
 	* change to "build/"
 	* execute "cmake .."
@@ -86,13 +86,12 @@ The source code has been tested after being compiled with gcc/g++ - Gnu Project 
 
 ### TroubleShooting
 
-* If goals and players are not shown in the basestation view make sure you run the commands from a shell with  "export LC_NUMERIC=C"
+* If goals and players are not shown in the basestation view make sure you run the
+commands from a shell with  "export LC_NUMERIC=C"
 
 ### More Information
 
     Please consult:
         http://robotica.ua.pt/CAMBADA
 
-
 Copyright (C) 2001-2015 Universidade de Aveiro
-
