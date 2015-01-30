@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+
+<gazebo:world 
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:gazebo="http://playerstage.sourceforge.net/gazebo/xmlschema/#gz" 
+  xmlns:model="http://playerstage.sourceforge.net/gazebo/xmlschema/#model" 
+  xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor" 
+  xmlns:param="http://playerstage.sourceforge.net/gazebo/xmlschema/#param" 
+  xmlns:body="http://playerstage.sourceforge.net/gazebo/xmlschema/#body" 
+  xmlns:geom="http://playerstage.sourceforge.net/gazebo/xmlschema/#geom" 
+  xmlns:joint="http://playerstage.sourceforge.net/gazebo/xmlschema/#joint" 
+  xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface" 
+  xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller"
+  xmlns:physics="http://playerstage.sourceforge.net/gazebo/xmlschema/#physics"
+  xmlns:render="http://www.ieeta.pt/atri/cambada/xmlschema/#render"
+  xmlns:field="http://www.ieeta.pt/atri/cambada/xmlschema/#field" >
+
+  <verbosity>6</verbosity>
+  <logData>false</logData>
+
+  <physics:ode>
+    <stepTime>0.01</stepTime>
+    <gravity>0 0 -9.8</gravity>
+    <cfm>10e-5</cfm>
+    <erp>0.8</erp>
+		<updateRate>-1</updateRate>
+  </physics:ode>
+  
+  <render:drawstuff>
+    <ballModel>BallOfGame</ballModel>
+  </render:drawstuff>
+
+  <field:msl>
+    <fieldLength>18</fieldLength>
+    <fieldWidth>12</fieldWidth>
+    
+    <centerCircleRadius>1.95</centerCircleRadius>
+    <goalieAreaLength>0.64</goalieAreaLength>
+    <goalieAreaWidth>3.38</goalieAreaWidth>
+
+    <penaltyAreaLength>2.15</penaltyAreaLength>
+    <penaltyAreaWidth>6.38</penaltyAreaWidth>
+  </field:msl>
+
+  <model:empty name="CAMBADA_comm">
+    <controller:comm name="comm">
+      <updateRate>10</updateRate>
+      <withIFace>false</withIFace>
+    </controller:comm>
+  </model:empty>
+
+
+  <model:physical name="plane1_model">
+    <xyz>0 0 0</xyz>
+    <rpy>0 0 0</rpy>
+    <static>true</static>
+    <body:plane name="plane1_body">
+      <geom:plane name="plane1_geom">
+        <normal>0 0 1</normal>
+				
+				<bounce>1</bounce>
+				<mu1>10</mu1>
+				
+        <slip1>1</slip1>
+        <slip2>1</slip2>
+
+      </geom:plane>
+    </body:plane>
+  </model:physical>
+
+	
+  <model:physical name="BallOfGame">
+
+    <xyz>0 0 2</xyz>
+    <canonicalName>GameBall</canonicalName>
+
+    <body:sphere name="sphere_body">
+      <pigment>1.0 0.454 0.0</pigment>
+      <dampingFactor>0.002</dampingFactor>
+      <geom:sphere name="sphere_geom">
+        <mass>0.04</mass>
+        <size>0.11</size>
+        <bounce>0.9</bounce>
+        <bounceVel>1.0</bounceVel>
+				<mu1>3</mu1>
+      </geom:sphere>
+
+		</body:sphere>
+
+  </model:physical>
+  
+
+	<model:physical name="south_goal">
+    <xyz>0 -9 0</xyz>
+    <rpy>0 0 90</rpy>
+    
+    <include embedded="true">
+      <xi:include href="goal.model" />
+    </include>
+  </model:physical>
+  
+  <model:physical name="north_goal">
+    <xyz>0 9 0</xyz>
+    <rpy>0 0 -90</rpy>
+    
+    <include embedded="true">
+      <xi:include href="goal.model" />
+    </include>
+  </model:physical>
+  
+  
+	<model:physical name="robbie_1">
+    <xyz>-2 -1 0.2</xyz>
+    <rpy>0 0 0</rpy>
+    
+    <selfID>1</selfID>
+    
+    <include embedded="true">
+      <xi:include href="cambada.model" />
+    </include>
+  </model:physical>
+  
+  <model:physical name="robbie_2">
+    <xyz>-1 -1 0.2</xyz>
+    <rpy>0 0 0</rpy>
+    
+    <selfID>2</selfID>
+    
+    <include embedded="true">
+      <xi:include href="cambada.model" />
+    </include>
+  </model:physical>
+
+  <model:physical name="robbie_3">
+    <xyz>0 -1 0.2</xyz>
+    <rpy>0 0 0</rpy>
+    
+    <selfID>3</selfID>
+    
+    <include embedded="true">
+      <xi:include href="cambada.model" />
+    </include>
+  </model:physical>
+
+  <model:physical name="robbie_4">
+    <xyz>1 -1 0.2</xyz>
+    <rpy>0 0 0</rpy>
+    
+    <selfID>4</selfID>
+    
+    <include embedded="true">
+      <xi:include href="cambada.model" />
+    </include>
+  </model:physical>
+
+  <model:physical name="robbie_5">
+    <xyz>2 -1 0.2</xyz>
+    <rpy>0 0 0</rpy>
+    
+    <selfID>5</selfID>
+    
+    <include embedded="true">
+      <xi:include href="cambada.model" />
+    </include>
+  </model:physical>
+
+</gazebo:world>

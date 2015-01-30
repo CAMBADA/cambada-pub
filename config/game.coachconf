@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CoachConfigFile.xsd">
+
+  <Formations>
+    <FormationRef ID="0" Name="default" Path="../config/DTs/formationDT.conf"/>
+    <FormationRef ID="1" Name="attack" Path="../config/DTs/RD_Attack.conf"/>
+  </Formations>
+
+  <Rules/>
+
+  <WindowDistMapSizeInSec>60</WindowDistMapSizeInSec>
+
+  <DefualtFormation>1</DefualtFormation>
+
+  <FightDistance>2</FightDistance>
+
+  <AwayFightTime>3</AwayFightTime>
+
+</Config>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SetPieces xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../config/SetPieces.xsd">
+
+  <SetPiece gameSignal="kickOff" placement="kickoff" zone="1"/>
+
+  <SetPiece gameSignal="all" placement="z1" zone="1"/>
+
+  <SetPiece gameSignal="all" placement="z2" zone="2"/>
+
+  <SetPiece gameSignal="all" placement="z3" zone="3"/>
+
+  <SetPiece gameSignal="all" placement="z4" zone="4"/>
+
+  <SetPiece gameSignal="all" placement="z5" zone="5"/>
+
+  <SetPiece gameSignal="all" placement="z6" zone="6"/>
+
+  <SetPiece gameSignal="all" placement="z7" zone="7"/>
+
+  <SetPiece gameSignal="all" placement="z8" zone="8"/>
+
+  <SetPiece gameSignal="all" placement="z9" zone="9"/>
+
+  <SetPiece gameSignal="all" placement="z10" zone="10"/>
+
+  <SetPiece gameSignal="all" placement="z11" zone="11"/>
+
+  <Play name="kickoff">
+    <RReplacer align="false" relative="true" x="0.340425" y="-0.114894"/>
+    <RReceiver action="pass" align="false" cover="false" id="1" lineClear="false" priority="0" relative="true" x="-2.17163" y="-0.180142"/>
+    <RReceiver action="none" align="false" cover="false" id="2" lineClear="false" priority="2" relative="true" x="0.209929" y="-4.19291"/>
+    <RReceiver action="pass" align="false" cover="false" id="3" lineClear="false" priority="1" relative="true" x="-0.605674" y="-2.30071"/>
+    <RReceiver action="pass" align="true" cover="true" id="4" lineClear="false" priority="3" relative="false" x="0" y="6"/>
+    <Default action="cross" relative="true" x="0.0794325" y="8.69362"/>
+  </Play>
+
+  <Play name="z1">
+    <RReplacer align="false" relative="true" x="-0.754787" y="-0.121986"/>
+    <RReceiver action="pass" align="false" cover="false" id="1" lineClear="false" priority="1" relative="true" x="-0.00443268" y="-2.34043"/>
+    <RReceiver action="none" align="false" cover="false" id="2" lineClear="true" priority="2" relative="false" x="-0.148936" y="-5.88936"/>
+    <RReceiver action="pass" align="false" cover="false" id="3" lineClear="true" priority="0" relative="false" x="-0.377305" y="6.96454"/>
+    <RReceiver action="none" align="true" cover="false" id="4" lineClear="true" priority="3" relative="false" x="0" y="-4"/>
+    <Default action="cross" relative="false" x="0.0794326" y="8.79149"/>
+  </Play>
+
+  <Play name="z9">
+    <RReplacer align="false" relative="true" x="-0.103191" y="0.468972"/>
+    <RReceiver action="pass" align="false" cover="false" id="1" lineClear="false" priority="0" relative="true" x="-0.201064" y="-2.27145"/>
+    <RReceiver action="none" align="false" cover="false" id="2" lineClear="true" priority="2" relative="false" x="-0.0312944" y="-5.68137"/>
+    <RReceiver action="none" align="false" cover="false" id="3" lineClear="false" priority="1" relative="true" x="-1.96277" y="-0.803369"/>
+    <RReceiver action="none" align="true" cover="false" id="4" lineClear="true" priority="3" relative="false" x="0" y="-4"/>
+    <Default action="cross" relative="false" x="1.34282" y="7.60171"/>
+  </Play>
+
+  <Play name="z8">
+    <RReplacer align="false" relative="true" x="0.500532" y="-0.0893612"/>
+    <RReceiver action="pass" align="false" cover="false" id="1" lineClear="false" priority="1" relative="true" x="-0.543439" y="-2.20993"/>
+    <RReceiver action="none" align="false" cover="false" id="2" lineClear="true" priority="2" relative="false" x="-0.0967285" y="-6.04125"/>
+    <RReceiver action="pass" align="false" cover="false" id="3" lineClear="true" priority="0" relative="false" x="0.470922" y="7.09504"/>
+    <RReceiver action="none" align="true" cover="false" id="4" lineClear="true" priority="3" relative="false" x="0" y="-4"/>
+    <Default action="cross" relative="false" x="-0.442553" y="8.72624"/>
+  </Play>
+
+  <Play name="z2">
+    <RReplacer align="false" relative="true" x="-0.183688" y="0.632092"/>
+    <RReceiver action="pass" align="false" cover="false" id="1" lineClear="false" priority="0" relative="true" x="0.142553" y="-2.23883"/>
+    <RReceiver action="none" align="false" cover="false" id="2" lineClear="true" priority="2" relative="false" x="-0.051064" y="-6.11773"/>
+    <RReceiver action="none" align="false" cover="false" id="3" lineClear="false" priority="1" relative="true" x="1.67589" y="-0.770745"/>
+    <RReceiver action="none" align="true" cover="false" id="4" lineClear="true" priority="3" relative="false" x="0" y="-4"/>
+    <Default action="cross" relative="false" x="-0.051064" y="8.75887"/>
+  </Play>
+
+  <Play name="z4">
+    <RReplacer align="true" relative="true" x="0.143972" y="0.566844"/>
+    <RReceiver action="pass" align="true" cover="false" id="1" lineClear="false" priority="0" relative="true" x="-0.051773" y="-2.23883"/>
+    <RReceiver action="none" align="false" cover="false" id="2" lineClear="true" priority="2" relative="false" x="-0.162162" y="-5.58321"/>
+    <RReceiver action="none" align="false" cover="false" id="3" lineClear="false" priority="1" relative="true" x="1.41631" y="-1.19486"/>
+    <RReceiver action="none" align="true" cover="false" id="4" lineClear="true" priority="3" relative="false" x="0" y="-4"/>
+    <Default action="cross" relative="false" x="-0.456615" y="7.56899"/>
+  </Play>
+
+  <Play name="z5">
+    <RReplacer align="false" relative="true" x="-0.117021" y="-0.758156"/>
+    <RReceiver action="pass" align="false" cover="false" id="1" lineClear="false" priority="1" relative="true" x="-0.117021" y="2.08014"/>
+    <RReceiver action="none" align="false" cover="false" id="2" lineClear="true" priority="2" relative="false" x="0.568794" y="-6.41135"/>
+    <RReceiver action="pass" align="false" cover="false" id="3" lineClear="true" priority="0" relative="false" x="1.87376" y="3.44113"/>
+    <RReceiver action="none" align="true" cover="false" id="4" lineClear="true" priority="3" relative="false" x="0" y="-4"/>
+    <Default action="cross" relative="false" x="0.0141846" y="8.72624"/>
+  </Play>
+
+  <Play name="z6">
+    <RReplacer align="true" relative="true" x="-0.137234" y="0.468972"/>
+    <RReceiver action="pass" align="true" cover="false" id="1" lineClear="false" priority="0" relative="true" x="-0.10461" y="-2.17358"/>
+    <RReceiver action="none" align="false" cover="false" id="2" lineClear="true" priority="2" relative="false" x="-0.260313" y="-5.68137"/>
+    <RReceiver action="none" align="false" cover="false" id="3" lineClear="false" priority="1" relative="true" x="-1.76844" y="-1.03174"/>
+    <RReceiver action="none" align="true" cover="false" id="4" lineClear="true" priority="3" relative="false" x="0" y="-4"/>
+    <Default action="cross" relative="false" x="0.13229" y="7.76529"/>
+  </Play>
+
+  <Play name="z7">
+    <RReplacer align="false" relative="true" x="-0.10461" y="-0.856029"/>
+    <RReceiver action="pass" align="false" cover="false" id="1" lineClear="false" priority="1" relative="true" x="-0.0393614" y="2.21064"/>
+    <RReceiver action="none" align="false" cover="false" id="2" lineClear="true" priority="2" relative="false" x="-0.703546" y="-6.3461"/>
+    <RReceiver action="pass" align="false" cover="false" id="3" lineClear="true" priority="0" relative="false" x="-1.97589" y="3.08227"/>
+    <RReceiver action="none" align="true" cover="false" id="4" lineClear="true" priority="3" relative="false" x="0" y="-4"/>
+    <Default action="cross" relative="false" x="-0.214185" y="8.69362"/>
+  </Play>
+
+  <Play name="z9">
+    <RReplacer align="false" relative="true" x="-0.103191" y="0.53422"/>
+    <RReceiver action="pass" align="false" cover="false" id="1" lineClear="false" priority="0" relative="true" x="-0.972518" y="-2.23741"/>
+    <RReceiver action="pass" align="false" cover="false" id="2" lineClear="false" priority="1" relative="true" x="-2.55" y="-0.183511"/>
+    <RReceiver action="pass" align="false" cover="false" id="3" lineClear="true" priority="2" relative="false" x="-0.116312" y="-3.21418"/>
+    <RReceiver action="none" align="true" cover="false" id="4" lineClear="true" priority="3" relative="false" x="0" y="-4"/>
+    <Default action="cross" relative="false" x="-0.083688" y="7.4539"/>
+  </Play>
+
+  <Play name="z10">
+    <RReplacer align="false" relative="true" x="-0.103191" y="-0.660284"/>
+    <RReceiver action="pass" align="false" cover="false" id="1" lineClear="true" priority="1" relative="false" x="4.71206" y="4.19149"/>
+    <RReceiver action="none" align="false" cover="false" id="2" lineClear="true" priority="2" relative="false" x="-0.214185" y="-6.05248"/>
+    <RReceiver action="pass" align="false" cover="false" id="3" lineClear="true" priority="0" relative="false" x="-2.2695" y="1.0922"/>
+    <RReceiver action="none" align="true" cover="false" id="4" lineClear="true" priority="3" relative="false" x="0" y="-4"/>
+    <Default action="cross" relative="true" x="-4.70319" y="12.3241"/>
+  </Play>
+
+  <Play name="z3">
+    <RReplacer align="false" relative="true" x="-0.0858159" y="-0.79078"/>
+    <RReceiver action="pass" align="false" cover="false" id="1" lineClear="true" priority="1" relative="false" x="-4.55319" y="4.58298"/>
+    <RReceiver action="none" align="false" cover="false" id="2" lineClear="true" priority="2" relative="false" x="-0.083688" y="-6.05248"/>
+    <RReceiver action="pass" align="false" cover="false" id="3" lineClear="true" priority="0" relative="false" x="2.29787" y="1.64681"/>
+    <RReceiver action="none" align="true" cover="false" id="4" lineClear="true" priority="3" relative="false" x="0" y="-4"/>
+    <Default action="cross" relative="false" x="-0.148936" y="8.56312"/>
+  </Play>
+
+</SetPieces>

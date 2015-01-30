@@ -1,0 +1,98 @@
+README
+
+***************************************************************************
+* Intelligent Robotics and Intelligent Systems (IRIS) Lab
+* CAMBADA robotic soccer team http://robotica.ua.pt/CAMBADA/
+* University of Aveiro, Portugal
+*
+* This code release includes the following tools and modules:
+* CAMBADA BASESTATION
+* CAMBADA SIMULATOR
+* CAMBADA RTDB & COMM
+* CAMBADA SIMPLE STRIKER AGENT
+* 
+* All these modules are composed of free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* These software modules are distributed in the hope that they will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
+* See the GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with these packages.  If not, see <http://www.gnu.org/licenses/>.
+***************************************************************************
+
+
+### Basic Information and Version Info
+
+This is the release 1.0 of all the tools referred to in the above header.
+
+Future releases may be updated with new features, agents, tools or tutorials.
+
+Check regularly at: 
+       http://robotica.ua.pt/CAMBADA/  or 
+       https://github.com/search?utf8=%E2%9C%93&q=CAMBADA
+
+
+### Contents
+
+  README                         this README file
+  CMakeLists.txt                 CMake root
+  Doxyfile                       documentation file
+  toInstall_Ubuntu10.04          command for necessary packages installation
+
+  bin/                           target directory for binaries
+  build/                         build directory
+  cMakeModules/                  cMake automatic library search files
+  config/                        team configuration files
+  deps/                          manual installation libraries
+  lib/                           target library for libraries
+
+  src/agent/                     the basic striker agent code
+  src/comm/                      rtdb and comm. code
+  src/geom/                      basic geometry classes
+  src/libs/                      libs for rtdb, process manager and libtcod
+  src/tools/basestation          basestation tool
+  src/tools/simulator            simulator tool
+  src/util/                      utility functions for the basic agent
+
+
+### Operating System and Compiler
+
+The source code has been tested after being compiled with gcc/g++ - Gnu Project C/C++ Compiler (gcc version 4.8.2) using the Qt4 libraries on Linux Ubuntu 14.04.
+        
+
+### Instructions on how to use this release:
+
+* All the packages listed in the "toInstall_Ubuntu14.04" file have to be installed prior to compilation.
+
+* All libraries in the "deps/" directory have to be installed prior to compilation. You can use the "installDeps.sh" script found in "/deps" to perform this installation.
+   
+	* change to "build/"
+	* execute "cmake .."
+	* execute "make"
+	* execute "make all tools csim"
+
+* To run the software
+	* change to "bin/"
+	* execute "sudo ./sim" to launch the simulator and basestation
+	* execute "sudo ./simAgents 2" to run agent number two
+
+* you can also run the basestation independently with
+	* execute "sudo AGENT=0 ./basestation"
+
+### TroubleShooting
+
+* If goals and players are not shown in the basestation view make sure you run the commands from a shell with  "export LC_NUMERIC=C"
+
+### More Information
+
+    Please consult:
+        http://robotica.ua.pt/CAMBADA
+
+
+Copyright (C) 2001-2015 Universidade de Aveiro
+

@@ -1,0 +1,34 @@
+#!/bin/bash
+
+ROOT_UID=0
+if [ $UID != $ROOT_UID ]; then
+    echo "Please run as ROOT"
+    exit 1
+fi
+
+AGENTS="$@"
+END=" >& /dev/null "
+#END=""
+		
+if [ ! "$DEBUG" == "" ]; then
+	END=""	
+fi
+
+if [ "$#" == "0" ]; then
+	AGENTS="1 2 3 4 5"
+else
+	AGENTS="$@"
+fi
+
+for i in $AGENTS
+do
+	sleep 0.1
+	
+	xterm -iconic -T "agent $i" -e "sudo AGENT=$i ./agent $END" &
+done
+
+echo "PRESS <ENTER> TO FINISH"
+read char
+
+sudo killall -INT agent
+

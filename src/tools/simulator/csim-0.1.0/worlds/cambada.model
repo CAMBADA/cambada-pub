@@ -1,0 +1,279 @@
+<?xml version="1.0"?>
+
+<!-- CAMBADA Robot Model -->
+<model:physical name="cambada_robbie_model"
+  xmlns:model="http://playerstage.sourceforge.net/gazebo/xmlschema/#model" 
+  xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor" 
+  xmlns:body="http://playerstage.sourceforge.net/gazebo/xmlschema/#body" 
+  xmlns:geom="http://playerstage.sourceforge.net/gazebo/xmlschema/#geom" 
+  xmlns:joint="http://playerstage.sourceforge.net/gazebo/xmlschema/#joint" 
+  xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface" 
+  xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller">
+  
+  <xyz>0 0 0</xyz>
+  <rpy>0 0 0</rpy>
+
+  <canonicalBody>chassis_body</canonicalBody>
+
+  <controller:holonome3sw_position2d name="h3sw_controller">
+		<updateRate>20.0</updateRate>
+    <wheels>
+      <radius>0.050572656</radius>
+      <distance>0.20614502</distance>
+      <torque>5</torque>
+      <swedish0>
+        <joint>wheel0_hinge</joint>
+        <alpha>30</alpha>
+      </swedish0>
+      <swedish1>
+        <joint>wheel1_hinge</joint>
+        <alpha>150</alpha>
+      </swedish1>
+      <swedish2>
+        <joint>wheel2_hinge</joint>
+        <alpha>270</alpha>
+      </swedish2>
+    </wheels>
+    <interface:position name="position_iface_0"/>
+  </controller:holonome3sw_position2d>
+
+  <body:trimesh name="chassis_body">
+    <xyz>0.0 0.0 0.0</xyz>
+    <rpy>0.0 0.0 0.0</rpy>
+    
+    <pigment>0 0 0</pigment>    
+    
+    
+    <geom:box name="0">
+      <rpy>0 0 30</rpy>
+      <xyz>0.210 0.135 0</xyz>
+      <size>0.03 0.14 0.145</size>
+    </geom:box>
+    <geom:box name="1">
+      <rpy>0 0 150</rpy>
+      <xyz>-0.210 0.135 0</xyz>
+      <size>0.03 0.14 0.145</size>
+    </geom:box>
+    <geom:box name="2">
+      <rpy>0 0 270</rpy>
+      <xyz>0.000 -0.25 0</xyz>
+      <size>0.03 0.14 0.145</size>
+    </geom:box>
+    
+    <geom:box name="3">
+      <rpy>0 0 210</rpy>
+      <xyz>-0.16 -0.08 0</xyz>
+      <size>0.03 0.38 0.145</size>
+    </geom:box>
+    <geom:box name="4">
+      <rpy>0 0 330</rpy>
+      <xyz>0.16 -0.08 0</xyz>
+      <size>0.03 0.38 0.145</size>
+    </geom:box>
+    
+    <geom:box name="5">
+      <rpy>0 0 270</rpy>
+      <xyz>-0.14 0.18 0</xyz>
+      <size>0.03 0.10 0.145</size>
+    </geom:box>
+    
+    <geom:box name="6">
+      <rpy>0 0 270</rpy>
+      <xyz>0.14 0.18 0</xyz>
+      <size>0.03 0.10 0.145</size>
+    </geom:box>
+    
+<!--    <geom:box name="1">
+      <rpy>0 0 210.00000</rpy>
+      <xyz>0.15274 0.15273 0.00000</xyz>
+      <size>0.05000 0.12869 0.14500</size>
+    </geom:box>
+
+    <geom:box name="4">
+      <rpy>0 0 135.00000</rpy>
+      <xyz>-0.15273 0.15274 0.00000</xyz>
+      <size>0.05000 0.12869 0.14500</size>
+    </geom:box>
+    <geom:box name="5">
+      <rpy>0 0 165.00000</rpy>
+      <xyz>-0.20864 0.05591 0.00000</xyz>
+      <size>0.05000 0.12869 0.14500</size>
+    </geom:box>
+    <geom:box name="6">
+      <rpy>0 0 195.00000</rpy>
+      <xyz>-0.20864 -0.05590 0.00000</xyz>
+      <size>0.05000 0.12869 0.14500</size>
+    </geom:box>
+    <geom:box name="7">
+      <rpy>0 0 225.00000</rpy>
+      <xyz>-0.15274 -0.15273 0.00000</xyz>
+      <size>0.05000 0.12869 0.14500</size>
+    </geom:box>
+    <geom:box name="8">
+      <rpy>0 0 255.00000</rpy>
+      <xyz>-0.05591 -0.20864 0.00000</xyz>
+      <size>0.05000 0.12869 0.14500</size>
+    </geom:box>
+    <geom:box name="9">
+      <rpy>0 0 285.00000</rpy>
+      <xyz>0.05590 -0.20864 0.00000</xyz>
+      <size>0.05000 0.12869 0.14500</size>
+    </geom:box>
+    <geom:box name="10">
+      <rpy>0 0 315.00000</rpy>
+      <xyz>0.15273 -0.15274 0.00000</xyz>
+      <size>0.05000 0.12869 0.14500</size>
+    </geom:box>
+    <geom:box name="11">
+      <rpy>0 0 345.00000</rpy>
+      <xyz>0.20864 -0.05591 0.00000</xyz>
+      <size>0.05000 0.12869 0.14500</size>
+    </geom:box>
+    -->
+ 
+    <geom:cylinder name="chassis_geom">
+      <xyz>0 0 0</xyz>
+      
+      <pigment>0.2 0.42 0.625</pigment>
+      
+      <size>0.1525 0.145</size>
+      <mass>25</mass>
+      <bounce>0</bounce>
+			<bounceVel>5</bounceVel>
+      <mu1>3</mu1>
+    </geom:cylinder>
+    
+    <sensor:compass name="compass">
+      <updateRate>50</updateRate>
+      <theNorth>90</theNorth>
+    </sensor:compass>
+
+    <sensor:vision name="vision_sensor">
+      <ballModel>BallOfGame</ballModel>
+      <updateRate>50</updateRate>
+      <seeDistance>5</seeDistance>
+      <sensors>80</sensors>
+      <passes>4</passes>
+      <delay>0</delay>
+    </sensor:vision>
+
+    <sensor:frontvision name="front_vision">
+      <ballModel>BallOfGame</ballModel>
+      <updateRate>50</updateRate>
+    </sensor:frontvision>
+
+    <sensor:barrier name="barrier_sensor0">
+      <ballModel>BallOfGame</ballModel>
+      <angle>30.0</angle>
+      <distance>0.28</distance>
+      <updateRate>50</updateRate>
+
+      <controller:grabber name="grabber">
+        <updateRate>50</updateRate>
+        <angle>25.0</angle>
+        <distance>0.35</distance>
+        <withIFace>false</withIFace>
+      </controller:grabber>
+    </sensor:barrier>
+    
+    <sensor:barrier name="barrier_sensor1">
+      <ballModel>BallOfGame</ballModel>
+      <angle>30.0</angle>
+      <distance>0.28</distance>
+      <updateRate>50</updateRate>
+
+      <controller:kicker name="kicker">
+        <updateRate>50</updateRate>
+        <withIFace>false</withIFace>
+        <tilt>45</tilt>
+        <lowVel>20.0</lowVel>
+      </controller:kicker>
+      
+    </sensor:barrier>
+
+  </body:trimesh>
+
+  <body:sphere name="wheel0">
+    <xyz>0.1785268698 0.1030724310 -0.0725</xyz>
+    <geom:sphere name="wheel0_geom">
+      <size>0.050572656</size>
+      <mass>0.237</mass>
+      
+      <mu1>20</mu1>
+      
+      <slip1>0.05</slip1>
+      <slip2>0.05</slip2>
+      
+      <bounce>0.9</bounce>
+			<bounceVel>5</bounceVel>
+			
+			<pigment>1 0 0</pigment>
+    </geom:sphere>
+
+  </body:sphere>
+
+  <body:cylinder name="wheel1">
+    <xyz>-0.1785265963 0.1030729048 -0.0725</xyz>
+    <geom:sphere name="wheel1_geom">
+      <size>0.050572656</size>
+      <mass>0.237</mass>
+      
+      <mu1>20</mu1>
+      
+      <slip1>0.05</slip1>
+      <slip2>0.05</slip2>
+      
+      <bounce>0.9</bounce>
+			<bounceVel>5</bounceVel>
+			
+			<pigment>0 1 0</pigment>
+    </geom:sphere>
+  </body:cylinder>
+
+  <body:sphere name="wheel2">
+    <xyz>-0.0000008205 -0.2061450200 -0.0725</xyz>
+    <geom:sphere name="wheel2_geom">
+      <size>0.050572656</size>
+      <mass>0.237</mass>
+      
+      <mu1>20</mu1>
+      
+      <slip1>0.05</slip1>
+      <slip2>0.05</slip2>
+      
+      <bounce>0.9</bounce>
+			<bounceVel>5</bounceVel>
+			
+			<pigment>0 0 1</pigment>
+    </geom:sphere>
+
+  </body:sphere>
+
+  <joint:hinge name="wheel0_hinge">
+    <body1>wheel0</body1>
+    <body2>chassis_body</body2>
+    <anchor>wheel0</anchor>
+    <axis>0.8660256249 0.4999996170 0</axis>
+    <erp>0.8</erp>
+    <cfm>10e-5</cfm>
+  </joint:hinge>
+
+  <joint:hinge name="wheel1_hinge">
+    <body1>wheel1</body1>
+    <body2>chassis_body</body2>
+    <anchor>wheel1</anchor>
+    <axis>-0.8660242981 0.5000019151 0</axis>
+    <erp>0.8</erp>
+    <cfm>10e-5</cfm>
+  </joint:hinge>
+
+  <joint:hinge name="wheel2_hinge">
+    <body1>wheel2</body1>
+    <body2>chassis_body</body2>
+    <anchor>wheel2</anchor>
+    <axis>-0.0000039804 -1.0000000000 0</axis>
+    <erp>0.8</erp>
+    <cfm>10e-5</cfm>
+  </joint:hinge>
+
+</model:physical>

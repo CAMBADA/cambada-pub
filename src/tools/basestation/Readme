@@ -1,0 +1,39 @@
+Para compilar adicionar isto ao ficheiro basestation.pro
+
+# Incluido para este projecto
+QT+=opengl
+QT+=network
+RESOURCES     = basestation.qrc
+DEPENDPATH += -I../include/
+INCLUDEPATH += ../include/ /usr/include/libxml++-1.0 /usr/lib/libxml++-1.0/include /usr/include/libxml2
+LIBS+= -L../lib/ -ltCambada -lrtdb -lworldstate -lutils -lxml++-1.0 -lxml2 -lpthread -lz -lm -lglut
+OBJECTS_DIR = ./obj
+CONFIG -= debug
+MOC_DIR = ./moc
+UI_DIR = ./ui
+
+#V2
+QT+=opengl
+QT+=network
+RESOURCES     = basestation.qrc
+DEPENDPATH += -I../include/
+INCLUDEPATH += ../include/ /usr/include/libxml++-1.0 /usr/lib/libxml++-1.0/include /usr/include/libxml2
+LIBS+= -L../lib/ -ltCambada -lrtdb -lworldstate -lutils -lxml++-1.0 -lxml2 -lpthread -lz -lm -lglut
+CONFIG -= debug
+
+
+
+Para correr o commulticast tem que se fazer o export do agente na janela do commulticast e no da basestation
+
+>> export AGENT=0
+
+
+Para compilar o código do Cambada são necessárias as seguintes libs:
+- build-essential
+- bison++
+- flex
+- libxml++-dev
+- libsdl-dev
+- libcv-dev
+- libglut-dev
+- libqt4-dev

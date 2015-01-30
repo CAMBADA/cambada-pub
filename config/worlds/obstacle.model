@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+
+<!-- Generic Obstacle Model -->
+<model:physical name="object_model"
+  xmlns:model="http://playerstage.sourceforge.net/gazebo/xmlschema/#model" 
+  xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor" 
+  xmlns:body="http://playerstage.sourceforge.net/gazebo/xmlschema/#body" 
+  xmlns:geom="http://playerstage.sourceforge.net/gazebo/xmlschema/#geom" 
+  xmlns:joint="http://playerstage.sourceforge.net/gazebo/xmlschema/#joint" 
+  xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface" 
+  xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller">
+  
+  <xyz>0 0 0</xyz>
+  <rpy>0 0 0</rpy>
+
+  <canonicalBody>chassis_body</canonicalBody>
+
+  <body:trimesh name="chassis_body">
+    <xyz>0.0 0.0 0.0</xyz>
+    <rpy>0.0 0.0 0.0</rpy>
+    
+    <pigment>0.2 0.2 0.2</pigment>
+    
+    <geom:box name="0">
+      <rpy>0 0 15.00000</rpy>
+      <xyz>0.21830 0.05849 0.00000</xyz>
+      <size>0.05000 0.13405 0.14500</size>
+    </geom:box>
+    <geom:box name="1">
+      <rpy>0 0 45.00000</rpy>
+      <xyz>0.15981 0.15981 0.00000</xyz>
+      <size>0.05000 0.13405 0.14500</size>
+    </geom:box>
+    <geom:box name="2">
+      <rpy>0 0 75.00000</rpy>
+      <xyz>0.05849 0.21830 0.00000</xyz>
+      <size>0.05000 0.13405 0.14500</size>
+    </geom:box>
+    <geom:box name="3">
+      <rpy>0 0 105.00000</rpy>
+      <xyz>-0.05849 0.21830 0.00000</xyz>
+      <size>0.05000 0.13405 0.14500</size>
+    </geom:box>
+    <geom:box name="4">
+      <rpy>0 0 135.00000</rpy>
+      <xyz>-0.15981 0.15981 0.00000</xyz>
+      <size>0.05000 0.13405 0.14500</size>
+    </geom:box>
+    <geom:box name="5">
+      <rpy>0 0 165.00000</rpy>
+      <xyz>-0.21830 0.05849 0.00000</xyz>
+      <size>0.05000 0.13405 0.14500</size>
+    </geom:box>
+    <geom:box name="6">
+      <rpy>0 0 195.00000</rpy>
+      <xyz>-0.21830 -0.05849 0.00000</xyz>
+      <size>0.05000 0.13405 0.14500</size>
+    </geom:box>
+    <geom:box name="7">
+      <rpy>0 0 225.00000</rpy>
+      <xyz>-0.15981 -0.15981 0.00000</xyz>
+      <size>0.05000 0.13405 0.14500</size>
+    </geom:box>
+    <geom:box name="8">
+      <rpy>0 0 255.00000</rpy>
+      <xyz>-0.05849 -0.21830 0.00000</xyz>
+      <size>0.05000 0.13405 0.14500</size>
+    </geom:box>
+    <geom:box name="9">
+      <rpy>0 0 285.00000</rpy>
+      <xyz>0.05849 -0.21830 0.00000</xyz>
+      <size>0.05000 0.13405 0.14500</size>
+    </geom:box>
+    <geom:box name="10">
+      <rpy>0 0 315.00000</rpy>
+      <xyz>0.15981 -0.15981 0.00000</xyz>
+      <size>0.05000 0.13405 0.14500</size>
+    </geom:box>
+    <geom:box name="11">
+      <rpy>0 0 345.00000</rpy>
+      <xyz>0.21830 -0.05849 0.00000</xyz>
+      <size>0.05000 0.13405 0.14500</size>
+    </geom:box>
+    
+    <geom:cylinder name="chassis_geom">
+      <xyz>0 0 0</xyz>
+      
+      <size>0.24 0.145</size>
+      <mass>16</mass>
+      
+      <bounce>0.9</bounce>
+			<bounceVel>1</bounceVel>
+      
+      <mu1>3</mu1>
+    </geom:cylinder>
+
+  </body:trimesh>
+
+</model:physical>

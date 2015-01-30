@@ -1,0 +1,30 @@
+#!/bin/bash
+
+MAX_AGENTS=7
+
+BASEKEY=0x2000
+
+for j in `seq 0 $MAX_AGENTS`;
+do
+	echo CLEAN SHMEM OF AGENT = $j
+	let KEY1=$BASEKEY+$j*$MAX_AGENTS*4
+	let KEY2=$KEY1+$MAX_AGENTS+1
+	for i in `seq $KEY1 $KEY2`;
+	do
+		ipcrm -M $i >& /dev/null
+	done
+done
+
+# PMAN
+sudo ipcrm -M 0x00009013 
+sudo ipcrm -M 0x00009015 
+sudo ipcrm -M 0x00009017 
+sudo ipcrm -M 0x00009019 
+sudo ipcrm -M 0x0000901b
+
+
+sudo ipcrm -S 0x00009013      
+sudo ipcrm -S 0x00009015      
+sudo ipcrm -S 0x00009017      
+sudo ipcrm -S 0x00009019      
+sudo ipcrm -S 0x0000901b

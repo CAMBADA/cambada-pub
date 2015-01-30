@@ -1,0 +1,62 @@
+CAMBADA Simulator - A Robocup Middle Size League simulator
+-----------------------------------------------------------
+
+NOTE: Instructions for Ubuntu 9.10.
+
+
+Quick Install
+-------
+
+  * Get all dependencies !!!
+    You can almost all of them in one shot
+    
+      $> sudo apt-get install cmake ruby libboost-thread1.40-dev libboost-signals1.40-dev libboost-math1.40-dev \
+      libtool libgl1-mesa-dev libglu1-mesa-dev libglut3-dev
+    
+      One last dependency.... Open Dynamics Engine (aka ode)
+      The stock version doesn't work with the simulator.
+
+      $> wget http://sourceforge.net/projects/opende/files/ODE/0.11.1/ode-0.11.1.zip/download
+      $> unzip ode-0.11.1.zip && cd ode-0.11.1
+      $> ./configure && make
+      $> sudo make install
+
+  * $> make && make install
+
+
+Dependencies
+-------------------
+
+CSim uses the following applications
+
+  * cmake <http://www.cmake.org/>
+    $> sudo apt-get install cmake
+
+  * ruby <www.ruby-lang.org>
+    $> sudo apt-get install ruby
+
+CSim uses the following libraries:
+
+  * Open Dynamics Engine (aka ode) <http://opende.sourceforge.net/>
+    -g- the stock version doesn't work properly with the simulator (it is compiled with DOUBLE precision :\ )
+
+    $> wget http://sourceforge.net/projects/opende/files/ODE/0.11.1/ode-0.11.1.zip/download
+    $> unzip ode-0.11.1.zip && cd ode-0.11.1
+    $> ./configure && make
+    $> sudo make install
+
+  * Boost <www.boost.org>
+    $> sudo apt-get install libboost-thread1.40-dev libboost-signals1.40-dev libboost-math1.40-dev
+
+  * libtool
+    $> sudo apt-get install libtool
+
+  * For 3D Rendering
+    $> sudo apt-get install libgl1-mesa-dev libglu1-mesa-dev libglut3-dev
+
+
+5/April/2012
+Ricardo Dias
+If you have trouble compiling ode, because of X11 library issues, try running the configure this way:
+$>  LIBS="-lX11" ./configure --x-libraries=/usr/lib/X11
+

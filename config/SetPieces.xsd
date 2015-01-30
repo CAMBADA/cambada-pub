@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="SetPieces">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="SetPiece" maxOccurs="unbounded" minOccurs="0">
+					<xs:complexType>
+						<xs:attribute name="gameSignal" use="required">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="kickOff"></xs:enumeration>
+									<xs:enumeration value="goalKick"></xs:enumeration>
+									<xs:enumeration value="cornerKick"></xs:enumeration>
+									<xs:enumeration value="freeKick"></xs:enumeration>
+									<xs:enumeration value="throwIn"></xs:enumeration>
+									<xs:enumeration value="all"></xs:enumeration>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+						<xs:attribute name="zone" type="xs:int" use="required"></xs:attribute>
+						<xs:attribute name="placement" type="xs:string" use="required"></xs:attribute>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Play" maxOccurs="unbounded" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="RReplacer">
+								<xs:complexType>
+									<xs:attribute name="relative" type="xs:boolean" default="false"></xs:attribute>
+									<xs:attribute name="x" type="xs:float" use="required"></xs:attribute>
+									<xs:attribute name="y" type="xs:float" use="required"></xs:attribute>
+									<xs:attribute name="align" type="xs:boolean" default="true"></xs:attribute>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="RReceiver" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="id" type="xs:int" use="required"></xs:attribute>
+									<xs:attribute name="relative" type="xs:boolean" default="false"></xs:attribute>
+									<xs:attribute name="cover" type="xs:boolean" default="false"></xs:attribute>
+									<xs:attribute name="x" type="xs:float" use="required"></xs:attribute>
+									<xs:attribute name="y" type="xs:float" use="required"></xs:attribute>
+									<xs:attribute name="priority" type="xs:int" use="required"></xs:attribute>
+									<xs:attribute name="action" use="required">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="pass"></xs:enumeration>
+												<xs:enumeration value="cross"></xs:enumeration>
+												<xs:enumeration value="none"></xs:enumeration>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="lineClear" type="xs:boolean" default="true"></xs:attribute>
+									<xs:attribute name="align" type="xs:boolean" default="true"></xs:attribute>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Default">
+								<xs:complexType>
+									<xs:attribute name="relative" type="xs:boolean" default="false"></xs:attribute>
+									<xs:attribute name="x" type="xs:float" use="required"></xs:attribute>
+									<xs:attribute name="y" type="xs:float" use="required"></xs:attribute>
+									<xs:attribute name="action" use="required">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="pass"></xs:enumeration>
+												<xs:enumeration value="cross"></xs:enumeration>
+												<xs:enumeration value="none"></xs:enumeration>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="name" type="xs:string" use="required"></xs:attribute>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,87 @@
+<CambadaConfig version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cambada.conf.xsd">
+
+
+	<Field name="ball_diameter" value="220"/>
+	<Field name="border_line_thickness" value="125"/>
+	<Field name="center_circle_radius" value="1875"/>
+	<Field name="corner_arc_radius" value="625"/>
+	<Field name="field_length" value="17875"/>
+	<Field name="field_width" value="11375"/>
+	<Field name="goal_area_length" value="625"/>
+	<Field name="goal_area_width" value="3375"/>
+	<Field name="goal_band_width" value="1005"/>
+	<Field name="goal_height" value="1000"/>
+	<Field name="goal_length" value="500"/>
+	<Field name="goal_width" value="2000"/>
+	<Field name="line_thickness" value="125"/>
+	<Field name="lineset_type" value="0"/>
+	<Field name="penalty_area_length" value="2125"/>
+	<Field name="penalty_area_width" value="6375"/>
+	<Field name="penalty_marker_distance" value="3000"/>
+	<Field name="robot_radius" value="240"/>
+	<Field name="side_band_width" value="850"/>
+	<Field name="theNorth" value="-80"/>
+	<Field name="zone_slider" value="-2500"/>
+
+
+	<Parameter name="TechMidfielder" value="0.000000" comment=""/>
+	<Parameter name="Touch" value="1.000000" comment=""/>
+	<Parameter name="TouchAdjustmentAngle" value="0.000000" comment=""/>
+	<Parameter name="TouchDistance" value="1.200000" comment=""/>
+	<Parameter name="TouchOffsetGoal" value="0.600000" comment=""/>
+	<Parameter name="TouchPTPx" value="5.500000" comment=""/>
+	<Parameter name="TouchPTPy" value="6.600000" comment=""/>
+	<Parameter name="avoid_distance" value="3.000000" comment=""/>
+	<Parameter name="avoid_nSensors" value="15.000000" comment=""/>
+	<Parameter name="avoid_safety_limit" value="3.000000" comment=""/>
+	<Parameter name="ballBodyProtect_limitVelX" value="0.000000" comment=""/>
+	<Parameter name="ballBodyProtect_limitVelY" value="0.000000" comment=""/>
+	<Parameter name="contour_obstacles" value="1.000000" comment="if 1, we contour obstacles"/>
+	<Parameter name="coverDistance" value="1.500000" comment=""/>
+	<Parameter name="cycle_time" value="20.000000" comment="should not be here, should be calculated from MOTION_TICK"/>
+	<Parameter name="delay" value="140.000000" comment="should be renamed, used in predict"/>
+	<Parameter name="dribble_boobs_map" value="1.000000" comment=""/>
+	<Parameter name="dribble_compensate_velTrans" value="2.000000" comment=""/>
+	<Parameter name="dribble_max_linear_vel" value="2.200000" comment=""/>
+	<Parameter name="dribble_overcompensate_alfa" value="1.000000" comment=""/>
+	<Parameter name="dribble_radius_vs_error" value="3.000000" comment=""/>
+	<Parameter name="dribble_util_num_sensors" value="18.000000" comment=""/>
+	<Parameter name="dribble_util_sensor_length" value="4.000000" comment=""/>
+	<Parameter name="goal_side_offset_factor" value="2.000000" comment=""/>
+	<Parameter name="goalieNumber" value="1.000000" comment=""/>
+	<Parameter name="grabber_on_angle" value="45.000000" comment=""/>
+	<Parameter name="grabber_on_distance" value="1.000000" comment=""/>
+	<Parameter name="kick_max_deg_error" value="1.000000" comment=""/>
+	<Parameter name="kick_no_rotate" value="0.000000" comment=""/>
+	<Parameter name="kickoff_y_offset" value="0.250000" comment=""/>
+	<Parameter name="maxSpeed" value="2.000000" comment="used only in BMidfielderReceiveBall --- should not be below the MAX_SPEED define"/>
+	<Parameter name="maxVelEngageBall" value="0.500000" comment="BReplacerPass"/>
+	<Parameter name="maxVelTrans" value="2.000000" comment="BParking"/>
+	<Parameter name="measure_deviation" value="0.050000" comment="IntegrateBall"/>
+	<Parameter name="movePosThreshold" value="0.010000" comment="CMove - do not move if the error is below this threshold"/>
+	<Parameter name="ourSideOfTheField" value="0.000000" comment="Parking"/>
+	<Parameter name="parkingTimeIntervalMS" value="500.000000" comment="Parking timer interval between agents"/>
+	<Parameter name="pass_max_deg_error" value="1.000000" comment="Replacer pass deg error"/>
+	<Parameter name="position0CoverAllowed" value="0.000000" comment=""/>
+	<Parameter name="position1CoverAllowed" value="0.000000" comment=""/>
+	<Parameter name="position2CoverAllowed" value="1.000000" comment=""/>
+	<Parameter name="position3CoverAllowed" value="1.000000" comment=""/>
+	<Parameter name="receiveMaxDegError" value="70.000000" comment="BReceiverFPReceiveBall"/>
+	<Parameter name="receiveMaxSpeed" value="2.000000" comment=""/>
+	<Parameter name="receiveSpeedDiff" value="1.000000" comment=""/>
+	<Parameter name="set_play_receiver_angle" value="2.000000" comment="weight of angle"/>
+	<Parameter name="set_play_receiver_ball_distance" value="2.000000" comment="weight of distance to ball"/>
+	<Parameter name="set_play_receiver_goal_distance" value="4.000000" comment="weight of distance to goal"/>
+	<Parameter name="set_play_receiver_move_distance" value="0.000000" comment="weight of receiver movement"/>
+	<Parameter name="set_play_receiver_search_radius" value="3.000000" comment="search radius"/>
+	<Parameter name="set_play_replacer_pass_distance" value="1.200000" comment="distance to point to pass that the receiver must be to pass the ball"/>
+	<Parameter name="set_play_replacer_pass_distance_factor" value="0.100000" comment=""/>
+	<Parameter name="weakMF" value="0.000000" comment=""/>
+
+
+	<CtrlParam name="compensateR" p="3.000000" i="0.000000" d="15.000000" maxOut="9999.000000" maxInt="0.200000" minOut="0.000000"/>
+	<CtrlParam name="compensateTrans" p="2.800000" i="0.200000" d="0.000000" maxOut="9999.000000" maxInt="0.500000" minOut="0.000000"/>
+	<CtrlParam name="compensateX" p="2.000000" i="0.100000" d="10.000000" maxOut="3.500000" maxInt="0.500000" minOut="0.000000"/>
+	<CtrlParam name="compensateY" p="2.000000" i="0.100000" d="10.000000" maxOut="3.500000" maxInt="0.500000" minOut="0.000000"/>
+
+</CambadaConfig>

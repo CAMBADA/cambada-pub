@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<!-- Generic Obstacle Model -->
+<model:physical name="goal_model"
+  xmlns:model="http://playerstage.sourceforge.net/gazebo/xmlschema/#model" 
+  xmlns:body="http://playerstage.sourceforge.net/gazebo/xmlschema/#body" 
+  xmlns:geom="http://playerstage.sourceforge.net/gazebo/xmlschema/#geom">
+  
+		<rpy>0 0 0</rpy>
+		<static>true</static>
+
+	<body:box name="goal">
+	  <pigment>0.78 0.6 0.062</pigment>
+		<geom:box name="goal_left_geom">
+		  <xyz>-0.5 -1.0625 0.5</xyz>
+			<size>1 0.125 1</size>
+			<mass>5</mass>
+		</geom:box>
+
+		<geom:box name="goal_right_geom">
+		  <xyz>-0.5 1.0625 0.5</xyz>
+			<size>1 0.125 1</size>
+			<mass>5</mass>
+		</geom:box>
+
+		<geom:box name="goal_top_geom">
+		  <xyz>-0.0625 0 1.0626</xyz>
+			<size>0.125 2.25 0.125</size>
+			<mass>5</mass>
+		</geom:box>
+
+		<geom:box name="goal_back_geom">
+		  <xyz>-0.9375 0 0.5</xyz>
+			<size>0.125 2.125 1</size>
+			<mass>5</mass>
+		</geom:box>
+	</body:box>
+
+</model:physical>

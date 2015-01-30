@@ -1,0 +1,739 @@
+<ui version="4.0" >
+ <author></author>
+ <comment></comment>
+ <exportmacro></exportmacro>
+ <class>FullInfoWindow_WG</class>
+ <widget class="QMainWindow" name="FullInfoWindow_WG" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>778</width>
+    <height>660</height>
+   </rect>
+  </property>
+  <property name="palette" >
+   <palette>
+    <active>
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>72</red>
+      <green>72</green>
+      <blue>72</blue>
+     </color>
+     <color>
+      <red>108</red>
+      <green>108</green>
+      <blue>108</blue>
+     </color>
+     <color>
+      <red>90</red>
+      <green>90</green>
+      <blue>90</blue>
+     </color>
+     <color>
+      <red>36</red>
+      <green>36</green>
+      <blue>36</blue>
+     </color>
+     <color>
+      <red>48</red>
+      <green>48</green>
+      <blue>48</blue>
+     </color>
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+     <color>
+      <red>72</red>
+      <green>72</green>
+      <blue>72</blue>
+     </color>
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+     <color>
+      <red>16</red>
+      <green>16</green>
+      <blue>16</blue>
+     </color>
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>255</red>
+      <green>0</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>36</red>
+      <green>36</green>
+      <blue>36</blue>
+     </color>
+    </active>
+    <inactive>
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>72</red>
+      <green>72</green>
+      <blue>72</blue>
+     </color>
+     <color>
+      <red>108</red>
+      <green>108</green>
+      <blue>108</blue>
+     </color>
+     <color>
+      <red>90</red>
+      <green>90</green>
+      <blue>90</blue>
+     </color>
+     <color>
+      <red>36</red>
+      <green>36</green>
+      <blue>36</blue>
+     </color>
+     <color>
+      <red>48</red>
+      <green>48</green>
+      <blue>48</blue>
+     </color>
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+     <color>
+      <red>72</red>
+      <green>72</green>
+      <blue>72</blue>
+     </color>
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+     <color>
+      <red>16</red>
+      <green>16</green>
+      <blue>16</blue>
+     </color>
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>255</red>
+      <green>0</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>36</red>
+      <green>36</green>
+      <blue>36</blue>
+     </color>
+    </inactive>
+    <disabled>
+     <color>
+      <red>36</red>
+      <green>36</green>
+      <blue>36</blue>
+     </color>
+     <color>
+      <red>72</red>
+      <green>72</green>
+      <blue>72</blue>
+     </color>
+     <color>
+      <red>108</red>
+      <green>108</green>
+      <blue>108</blue>
+     </color>
+     <color>
+      <red>90</red>
+      <green>90</green>
+      <blue>90</blue>
+     </color>
+     <color>
+      <red>36</red>
+      <green>36</green>
+      <blue>36</blue>
+     </color>
+     <color>
+      <red>48</red>
+      <green>48</green>
+      <blue>48</blue>
+     </color>
+     <color>
+      <red>36</red>
+      <green>36</green>
+      <blue>36</blue>
+     </color>
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>36</red>
+      <green>36</green>
+      <blue>36</blue>
+     </color>
+     <color>
+      <red>72</red>
+      <green>72</green>
+      <blue>72</blue>
+     </color>
+     <color>
+      <red>72</red>
+      <green>72</green>
+      <blue>72</blue>
+     </color>
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>0</blue>
+     </color>
+     <color>
+      <red>127</red>
+      <green>125</green>
+      <blue>123</blue>
+     </color>
+     <color>
+      <red>255</red>
+      <green>255</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>0</red>
+      <green>0</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>255</red>
+      <green>0</green>
+      <blue>255</blue>
+     </color>
+     <color>
+      <red>72</red>
+      <green>72</green>
+      <blue>72</blue>
+     </color>
+    </disabled>
+   </palette>
+  </property>
+  <property name="windowTitle" >
+   <string>CAMBADA Basestation - Info Full Screen View</string>
+  </property>
+  <widget class="QWidget" name="centralwidget" >
+   <layout class="QHBoxLayout" >
+    <property name="margin" >
+     <number>9</number>
+    </property>
+    <property name="spacing" >
+     <number>6</number>
+    </property>
+    <item>
+     <layout class="QVBoxLayout" >
+      <property name="margin" >
+       <number>0</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" >
+        <property name="margin" >
+         <number>0</number>
+        </property>
+        <property name="spacing" >
+         <number>6</number>
+        </property>
+        <item>
+         <widget class="QGroupBox" name="GB_Robot1" >
+          <property name="sizePolicy" >
+           <sizepolicy>
+            <hsizetype>5</hsizetype>
+            <vsizetype>5</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="focusPolicy" >
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="acceptDrops" >
+           <bool>true</bool>
+          </property>
+          <property name="title" >
+           <string>Robot 1</string>
+          </property>
+          <property name="flat" >
+           <bool>false</bool>
+          </property>
+          <widget class="RobotInfoWidget" name="Robot_info_WG_1" >
+           <property name="geometry" >
+            <rect>
+             <x>10</x>
+             <y>50</y>
+             <width>200</width>
+             <height>100</height>
+            </rect>
+           </property>
+           <property name="sizePolicy" >
+            <sizepolicy>
+             <hsizetype>13</hsizetype>
+             <vsizetype>13</vsizetype>
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize" >
+            <size>
+             <width>200</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="sizeIncrement" >
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="baseSize" >
+            <size>
+             <width>400</width>
+             <height>800</height>
+            </size>
+           </property>
+           <property name="mouseTracking" >
+            <bool>false</bool>
+           </property>
+           <property name="focusPolicy" >
+            <enum>Qt::StrongFocus</enum>
+           </property>
+           <property name="acceptDrops" >
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="GB_Robot2" >
+          <property name="focusPolicy" >
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="acceptDrops" >
+           <bool>true</bool>
+          </property>
+          <property name="title" >
+           <string>Robot 2</string>
+          </property>
+          <widget class="RobotInfoWidget" name="Robot_info_WG_2" >
+           <property name="geometry" >
+            <rect>
+             <x>20</x>
+             <y>60</y>
+             <width>200</width>
+             <height>100</height>
+            </rect>
+           </property>
+           <property name="sizePolicy" >
+            <sizepolicy>
+             <hsizetype>13</hsizetype>
+             <vsizetype>13</vsizetype>
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize" >
+            <size>
+             <width>200</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="sizeIncrement" >
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="baseSize" >
+            <size>
+             <width>400</width>
+             <height>800</height>
+            </size>
+           </property>
+           <property name="mouseTracking" >
+            <bool>false</bool>
+           </property>
+           <property name="focusPolicy" >
+            <enum>Qt::StrongFocus</enum>
+           </property>
+           <property name="acceptDrops" >
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="GB_Robot3" >
+          <property name="focusPolicy" >
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="acceptDrops" >
+           <bool>true</bool>
+          </property>
+          <property name="title" >
+           <string>Robot 3</string>
+          </property>
+          <widget class="RobotInfoWidget" name="Robot_info_WG_3" >
+           <property name="geometry" >
+            <rect>
+             <x>30</x>
+             <y>70</y>
+             <width>200</width>
+             <height>100</height>
+            </rect>
+           </property>
+           <property name="sizePolicy" >
+            <sizepolicy>
+             <hsizetype>13</hsizetype>
+             <vsizetype>13</vsizetype>
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize" >
+            <size>
+             <width>200</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="sizeIncrement" >
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="baseSize" >
+            <size>
+             <width>400</width>
+             <height>800</height>
+            </size>
+           </property>
+           <property name="mouseTracking" >
+            <bool>false</bool>
+           </property>
+           <property name="focusPolicy" >
+            <enum>Qt::StrongFocus</enum>
+           </property>
+           <property name="acceptDrops" >
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" >
+        <property name="margin" >
+         <number>0</number>
+        </property>
+        <property name="spacing" >
+         <number>6</number>
+        </property>
+        <item>
+         <widget class="QGroupBox" name="GB_Robot4" >
+          <property name="focusPolicy" >
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="acceptDrops" >
+           <bool>true</bool>
+          </property>
+          <property name="title" >
+           <string>Robot 4</string>
+          </property>
+          <widget class="RobotInfoWidget" name="Robot_info_WG_4" >
+           <property name="geometry" >
+            <rect>
+             <x>40</x>
+             <y>80</y>
+             <width>200</width>
+             <height>100</height>
+            </rect>
+           </property>
+           <property name="sizePolicy" >
+            <sizepolicy>
+             <hsizetype>13</hsizetype>
+             <vsizetype>13</vsizetype>
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize" >
+            <size>
+             <width>200</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="sizeIncrement" >
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="baseSize" >
+            <size>
+             <width>400</width>
+             <height>800</height>
+            </size>
+           </property>
+           <property name="mouseTracking" >
+            <bool>false</bool>
+           </property>
+           <property name="focusPolicy" >
+            <enum>Qt::StrongFocus</enum>
+           </property>
+           <property name="acceptDrops" >
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="GB_Robot5" >
+          <property name="focusPolicy" >
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="acceptDrops" >
+           <bool>true</bool>
+          </property>
+          <property name="title" >
+           <string>Robot 5</string>
+          </property>
+          <widget class="RobotInfoWidget" name="Robot_info_WG_5" >
+           <property name="geometry" >
+            <rect>
+             <x>30</x>
+             <y>40</y>
+             <width>200</width>
+             <height>100</height>
+            </rect>
+           </property>
+           <property name="sizePolicy" >
+            <sizepolicy>
+             <hsizetype>13</hsizetype>
+             <vsizetype>13</vsizetype>
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize" >
+            <size>
+             <width>200</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="sizeIncrement" >
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="baseSize" >
+            <size>
+             <width>400</width>
+             <height>800</height>
+            </size>
+           </property>
+           <property name="mouseTracking" >
+            <bool>false</bool>
+           </property>
+           <property name="focusPolicy" >
+            <enum>Qt::StrongFocus</enum>
+           </property>
+           <property name="acceptDrops" >
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="GB_Robot6" >
+          <property name="focusPolicy" >
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="acceptDrops" >
+           <bool>true</bool>
+          </property>
+          <property name="title" >
+           <string>Robot 6</string>
+          </property>
+          <widget class="RobotInfoWidget" name="Robot_info_WG_6" >
+           <property name="geometry" >
+            <rect>
+             <x>10</x>
+             <y>40</y>
+             <width>200</width>
+             <height>100</height>
+            </rect>
+           </property>
+           <property name="sizePolicy" >
+            <sizepolicy>
+             <hsizetype>13</hsizetype>
+             <vsizetype>13</vsizetype>
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize" >
+            <size>
+             <width>200</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="sizeIncrement" >
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="baseSize" >
+            <size>
+             <width>400</width>
+             <height>800</height>
+            </size>
+           </property>
+           <property name="mouseTracking" >
+            <bool>false</bool>
+           </property>
+           <property name="focusPolicy" >
+            <enum>Qt::StrongFocus</enum>
+           </property>
+           <property name="acceptDrops" >
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>638</y>
+     <width>778</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QMenuBar" name="menuBar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>778</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile" >
+    <property name="title" >
+     <string>File</string>
+    </property>
+    <addaction name="actionQuit" />
+   </widget>
+   <widget class="QMenu" name="menuInfo" >
+    <property name="title" >
+     <string>Info</string>
+    </property>
+    <addaction name="actionView_Full_Screen" />
+   </widget>
+   <addaction name="menuFile" />
+   <addaction name="menuInfo" />
+  </widget>
+  <action name="actionQuit" >
+   <property name="text" >
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionView_Full_Screen" >
+   <property name="text" >
+    <string>View Full Screen</string>
+   </property>
+  </action>
+ </widget>
+ <pixmapfunction></pixmapfunction>
+ <customwidgets>
+  <customwidget>
+   <class>RobotInfoWidget</class>
+   <extends>QWidget</extends>
+   <header>RobotInfoWidget.h</header>
+   <container>0</container>
+   <pixmap></pixmap>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

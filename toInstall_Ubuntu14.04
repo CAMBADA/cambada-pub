@@ -1,0 +1,1 @@
+sudo apt-get install cmake xsdcxx libxerces-c-dev libeigen3-dev libvtk5-qt4-dev libode-sp-dev libboost-system-dev libboost-thread-dev libboost-signals-dev libtool flex bison libsdl1.2-dev freeglut3-dev

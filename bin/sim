@@ -1,0 +1,50 @@
+#!/bin/bash
+
+ROOT_UID=0
+if [ $UID != $ROOT_UID ]; then
+    echo "Please run as ROOT"
+    exit 1
+fi
+
+echo "cleaning RTDB residues"
+./rtdb_clean
+
+echo "  ____    _    __  __ ____    _    ____    _    "
+echo " / ___|  / \  |  \/  | __ )  / \  |  _ \  / \   "
+echo "| |     / _ \ | |\/| |  _ \ / _ \ | | | |/ _ \  "
+echo "| |___ / ___ \| |  | | |_) / ___ \| |_| / ___ \ "
+echo " \____/_/   \_\_|  |_|____/_/   \_\____/_/   \_\ "
+echo "                                                "
+
+SIMPATH=../src/tools/simulator/csim-0.1.0
+
+# Update simulator configuration files
+cp ../src/tools/simulator/csim-0.1.0/worlds/sim.conf.yaml ../config
+
+mkdir ../config/worlds
+for MODEL in cambada.model goal_blue.model goal_yellow.model obstacle.model
+do
+	cp ../src/tools/simulator/csim-0.1.0/worlds/$MODEL ../config/worlds
+done
+
+ruby ../src/tools/simulator/tools/gen/generator.rb
+
+
+case "$1" in
+  solo)
+
+    shift
+    sudo LD_LIBRARY_PATH=../lib ./csim $@ ../config/worlds/CAMBADA.world
+    exit $?
+    ;;
+  *)
+
+  xterm -iconic -T "_ simulator _" -e "sudo LD_LIBRARY_PATH=../lib ./csim  $@ ../config/worlds/CAMBADA.world; sleep 2" &
+  sleep 1
+  xterm -iconic -T "_ basestation _" -e "sudo AGENT=0 ./basestation"  &
+  ;;
+esac
+
+# Sets Simulator On Top of other windows
+wmctrl -r "CAMBADA Simulator" -b add,above
+

@@ -1,0 +1,9 @@
+CAMBADA Simulator
+
+author: Eurico Pedrosa <efp@ua.pt> 
+
+This software uses Gazebo <http://playerstage.sourceforge.net/index.php?src=gazebo> as its core.
+
+Gazebo is an original work of:
+  Nate Koenig <natepak@users.sourceforge.net>
+  Andrew Howard <inspectorg@users.sourceforge.net>

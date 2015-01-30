@@ -1,0 +1,76 @@
+
+#
+# 
+#
+#
+
+# Set verbosity level
+#   -1 : none
+# 0..9 : critical .. info
+verbosity: 2
+
+# Output log data to a file
+#  true : outputs to gazebo-`date`.log
+# false : outputs to /dev/null
+logData: false
+
+# Output json log data to a file
+#  true : outputs to gazebo-`date`.json
+# false : outputs to /dev/null
+logJson: false
+
+# Number os obstacles in the field
+obstacles: 5
+
+# Physics engine options
+physics: {
+  # The amount of time that will be simulated at 
+  # each step
+  steptime: 0.01,
+
+  # This one is self explanatory
+  # Note: Z is the gravity axis
+  gravity: -9.8
+}
+
+field: {
+  # get field dimension from cambada.conf.xml
+  #  true : load from cambada.conf.xml
+  # false : use fallback dimensions
+  getfromCAMBADA: true,
+
+  # Fallback dimensions
+  length: 18.0,
+  width : 12.0,
+
+  center_radius: 1.95,
+  
+  goalie_length: 0.64,
+  goalie_width : 3.38,
+
+  penalty_length: 2.15,
+  penalty_width : 6.38
+}
+
+# Ball model definition
+ball_of_game: {
+  # model name
+  name: "BallOfGame",
+  # Initial position
+  pos: [0, 0, 1],
+  # ball properties
+  radius: 0.11,
+  mass: 0.04
+}
+
+# Present agents
+agents: [1, 2, 3, 4, 5]
+
+
+
+
+
+
+
+
+
