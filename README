@@ -82,7 +82,7 @@ You can use the "installDeps.sh" script found in "deps/" to perform this install
 	* change to "build/"
 	* execute "cmake .."
 	* execute "make"
-	* execute "make all tools csim"
+	* execute "make all tools csim-exec"
 
 * To run the software
 	* change to "bin/"
