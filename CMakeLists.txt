@@ -1,9 +1,9 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
 PROJECT( Cambada )
 
-SET( V_MAJOR 2 )
+SET( V_MAJOR 1 )
 SET( V_MINOR 0 )
-SET( V_PATCH 1 )
+SET( V_PATCH 0 )
 
 # ---
 MESSAGE ("  ____    _    __  __ ____    _    ____    _    ")
