@@ -76,9 +76,16 @@ C/C++ Compiler (gcc version 4.8.2) using the Qt4 libraries on Linux Ubuntu 14.04
 * All the packages listed in the "toInstall_Ubuntu14.04" file have to be
 installed prior to compilation.
 
+	* execute "source toInstall_Ubuntu14.04"
+
 * All libraries in the "deps/" directory have to be installed prior to compilation.
 You can use the "installDeps.sh" script found in "deps/" to perform this installation.
-   
+	
+	* execute "chmod u+x installDeps.sh" 
+	* execute "sudo ./installDeps.sh"
+
+*To compilation the software
+
 	* change to "build/"
 	* execute "cmake .."
 	* execute "make"
